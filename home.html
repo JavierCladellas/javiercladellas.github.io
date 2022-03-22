@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-179019405-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-179019405-1');
+</script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="shortcut icon" type="image/x-icon" href="assets/favicon.ico" /> 
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>LogiGoat - Web Development</title>
+</head>
+<body>
+    <nav class="nav">
+        <div class="container-fluid">
+            <div class="logo">
+                <a href="home.html">
+                    <img width="auto" height="55px" src="assets/LogiGoatOutline-50px-02.png">
+                    <span style="color:#fff">Logi</span><b style="color:#EC651E">Goat</b>
+                </a>
+            </div>
+            <div id="mainListDiv" class="main_list">
+                <ul class="navlinks">
+                    <li><a class="nav-btn active" href="home.html">Home</a></li>
+                    <li><a class="nav-btn" href="about.html">About</a></li>
+                    <li><a class="nav-btn" href="services.html">Services</a></li>
+                    <li><a class="nav-btn" href="work.html">Work</a></li>
+                    <li><a class="nav-btn" href="contact.html">Contact</a></li>
+                    <li style="display:none">
+                        <select name="language" id="language">
+                            <option value="" disabled selected hidden>&#xf0ac;</option>
+                            <option value="en">En</option>
+                            <option value="es">Es</option>
+                        </select>
+                    </li>
+                </ul>
+            </div>
+            <span class="navTrigger">
+                <i></i>
+                <i></i>
+                <i></i>
+            </span>
+        </div>
+    </nav>
+
+    <section class="page home-page">
+        <svg class="home-lines" height="100%" width="100%">
+            <line class="line line-left" x1="10%" y1="0%" x2="10%" y2="100%"/>
+            <line class="line line-bottom" x1="20%" y1="90%" x2="100%" y2="90%"/>
+            <line class="line line-top" x1="0" y1="10%" x2="100%" y2="10%"/>
+            <line class="line line-right" x1="90%" y1="20%" x2="90%" y2="100%"/>
+        </svg>
+        <div class="container-fluid d-flex flex-column">
+            <div class="titles-container">
+                <p class="home-title"><span style="color:#EC651E;" >Practical </span>solutions and <span style="color:#EC651E" >friendly</span> designs </p> 
+                <p class="home-subtitle"><span >web, mobile and software development</span></p>
+            </div>
+            <div>
+                <p class="project-text">A project in mind? </p>
+            </div>
+            <div class="main-button-container">
+                <button  form="go-to-contact" class="button main-button" >
+                    Goat With Us!
+                </button>
+            </div>
+            <form id="go-to-contact" action="contact.html"></form>
+            <div class="next-page-button-container mt-auto bounce">
+                <button class="next-page-button b1" onClick="document.getElementById('second-section').scrollIntoView();">
+                    <img src="assets/down-arrow.svg" />
+                </button>
+            </div>  
+        </div>
+        
+
+    </section>
+
+    <section class="page what-we-do" id="second-section">
+
+        <div class="page-container container-fluid">
+            <div>
+                <h1 class="page-title">
+                    <i class="fa fa-minus" aria-hidden="true"></i> 
+                    WHAT WE DO
+                    <i class="fa fa-minus" aria-hidden="true"></i>
+                </h1>
+            </div>
+
+            <div class="text-container my-auto">
+                <div class="text">We are a web, mobile and software design company based in El Salvador. An efficient collaboration of systems engineers, programmers and graphic designers, centered on providing good quality solutions adapted to&nbsp;any&nbsp;budget.</div>
+                <br>
+                <div class="text">Our mission is to help our clients grow, innovate and endure their brands digitally, through the adoption of our leading-edge web design technology, compelling marketing strategies, and our customer-driven business&nbsp;philosophy.</div>
+            </div>
+
+            <div class="container-fluid services my-auto">
+                <div class="row">
+                    <div class="col-lg-1 col-0"></div>
+                    <div onclick="document.getElementById('go-to-services').submit();" class="col-lg-2 col-md-4 col-sm-6 col-12 service-container">
+                        <img width=100px src="assets/transfer-400x400.png" ></img>
+                        <br>
+                        <span class="service">Web & <br> Mobile</span>
+                    </div>
+                    <div onclick="document.getElementById('go-to-services').submit();" class="col-lg-2 col-md-4 col-sm-6 col-12 service-container">
+                       <img width=100px src="assets/idea-400x400.png" ></img>
+                        <br>
+                        <span class="service">Branding & <br> Marketing</span>
+                    </div>
+                    <div onclick="document.getElementById('go-to-services').submit();" class="col-lg-2 col-md-4 col-sm-6 col-12 service-container">
+                       <img width=100px src="assets/code-400x400.png" ></img>
+                        <br>
+                        <span class="service">Software <br> Development</span>
+                    </div>
+                    <div onclick="document.getElementById('go-to-services').submit();" class="col-lg-2 col-md-6 col-sm-6 col-12 service-container">
+                       <img width=100px src="assets/brain-400x400.png" ></img>
+                        <br>
+                        <span class="service">Business <br> Intelligence</span>
+                    </div>
+                    <div onclick="document.getElementById('go-to-services').submit();" class="col-lg-2 col-md-6 col-sm-12 col-12 service-container">
+                       <img width=100px src="assets/security-system-400x400.png" ></img>
+                        <br>
+                        <span class="service">Web <br> Security</span>
+                    </div>
+                    <div class="col-lg-1 col-0"></div>
+                </div>
+            </div>
+            
+            <div class="page-button-container my-auto">
+                <button form="go-to-services" class="button page-button" >
+                    Learn More
+                </button>
+            </div>
+            <form id="go-to-services" action="services.html"></form>
+
+            <div class="next-page-button-container mt-auto bounce">
+                <button class="next-page-button b2" onClick="document.getElementById('fourth-section').scrollIntoView({ behavior: 'smooth', block: 'nearest'});">
+                    <img src="assets/down-arrow.svg" />
+                </button>
+            </div>
+        </div>
+        
+    </section>
+
+    <section style="display:none" class="page our-work" id="third-section">
+        <div class="page-container container-fluid">
+            <div>
+                <h1 class="page-title">
+                    <i class="fa fa-minus" aria-hidden="true"></i> 
+                    OUR WORK
+                    <i class="fa fa-minus" aria-hidden="true"></i> 
+                </h1>
+            </div>
+            <div class="text-container my-auto">
+                <div class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde odit veritatis sed reprehenderit ab laboriosam odio accusantium magnam, cum sapiente iste vitae aspernatur voluptatum perspiciatis nostrum maiores nihil libero a! </div>    
+            </div>
+<!--             <div class="container brands">
+                <div class="row">
+                    <div class="brand col-md-3 col-6">
+                        <img width="100px" height="50px;" src="assets/logos/CORVUS-LOGO-13.png"/>
+                    </div>
+                    <div class="brand col-md-3 col-6">
+                        <img width="100px" src="assets/logos/dipro.png"/>
+                    </div>
+                    <div class="brand col-md-3 col-6">
+                        <i class="fa fa-desktop" aria-hidden="true"></i>
+                    </div>
+                    <div class="brand col-md-3 col-6">
+                        <i class="fa fa-desktop" aria-hidden="true"></i>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="brand col-md-3 col-6">
+                        <i class="fa fa-desktop" aria-hidden="true"></i>
+                    </div>
+                    <div class="brand col-md-3 col-6">
+                        <i class="fa fa-desktop" aria-hidden="true"></i>
+                    </div>
+                    <div class="brand col-md-3 col-6">
+                        <i class="fa fa-desktop" aria-hidden="true"></i>
+                    </div>
+                    <div class="brand col-md-3 col-6">
+                        <i class="fa fa-desktop" aria-hidden="true"></i>
+                    </div>
+                </div>
+            </div> -->
+
+            <div class="container portfolio my-auto">
+                
+                <div class="portfolio-image">
+                    <img src="https://getuikit.com/v2/docs/images/placeholder_600x400.svg">
+                </div>
+                
+                <div class="portfolio-image">
+                    <img src="https://getuikit.com/v2/docs/images/placeholder_600x400.svg">
+                </div>
+                
+                <div class="portfolio-image">
+                    <img src="https://getuikit.com/v2/docs/images/placeholder_600x400.svg">
+                </div>
+                
+                <div class="portfolio-image">
+                    <img src="https://getuikit.com/v2/docs/images/placeholder_600x400.svg">
+                </div> 
+
+            </div>
+            
+
+            <div class="next-page-button-container bounce mt-auto">
+                <button class="next-page-button b3" onClick="document.getElementById('fourth-section').scrollIntoView({ behavior: 'smooth', block: 'nearest'});">
+                    <img src="assets/down-arrow.svg" />
+                </button>
+            </div>
+        </div>
+
+    </section>
+
+    <section class="page technologies" id="fourth-section">
+        <div class="container-fluid page-container">
+            <div>
+                <h1 class="page-title">
+                    <i class="fa fa-minus" aria-hidden="true"></i> 
+                    TECHNOLOGIES
+                    <i class="fa fa-minus" aria-hidden="true"></i> 
+                </h1>
+            </div>
+            <div class="text-container my-auto">
+                <div class="text">We have mastered many high-level languages and software to develop your ideas thoroughly, using the right features of each one of them to accelerate the developing process without losing&nbsp;any&nbsp;quality.</div>    
+            </div>
+
+            <div class="container-fluid prog-icons my-auto">
+                <div class="row">
+                    <div class="prog-icon col-lg-2 col-md-3 col-sm-4 col-6">
+                        <img src="assets/technologies/bootsrap.png"></img>
+                    </div>
+                    <div class="prog-icon col-lg-2 col-md-3 col-sm-4 col-6">
+                        <img src="assets/technologies/android.png"></img>
+                    </div>
+                    <div class="prog-icon col-lg-2 col-md-3 col-sm-4 col-6">
+                        <img src="assets/technologies/angular.png"></img>
+                    </div>
+                    <div class="prog-icon col-lg-2 col-md-3 col-sm-4 col-6">
+                        <img src="assets/technologies/c++.png"></img>
+                    </div>
+                    <div style="padding-left:0px" class="prog-icon col-lg-2 col-md-3 col-sm-4 col-6">
+                        <img src="assets/technologies/php.png"></img>
+                    </div>
+                    <div class="prog-icon col-lg-2 col-md-3 col-sm-4 col-6">
+                        <img src="assets/technologies/csharp.png"></img>
+                    </div>
+                    <div class="prog-icon col-lg-2 col-md-3 col-sm-4 col-6">
+                        <img src="assets/technologies/css3.png"></img>
+                    </div>
+                    <div class="prog-icon col-lg-2 col-md-3 col-sm-4 col-6">
+                        <img src="assets/technologies/html5.png"></img>
+                    </div>
+                    <div style="padding-left:0px" class="prog-icon col-lg-2 col-md-3 col-sm-4 col-6">
+                        <img src="assets/technologies/ionic.png"></img>
+                    </div>
+                    <div class="prog-icon col-lg-2 col-md-3 col-sm-4 col-6">
+                        <img src="assets/technologies/ios.png"></img>
+                    </div>
+                    <div style="padding-left:0px" class="prog-icon col-lg-2 col-md-3 col-sm-4 col-6">
+                        <img src="assets/technologies/jquery.png"></img>
+                    </div> 
+                    <div class="prog-icon col-lg-2 col-md-3 col-sm-4 col-6">
+                        <img src="assets/technologies/java.png"></img>
+                    </div>    
+                    <div style="padding-left:0px" class="prog-icon col-lg-2 col-md-3 col-sm-4 col-6">
+                        <img src="assets/technologies/mysql.png"></img>
+                    </div>           
+                    <div class="prog-icon col-lg-2 col-md-3 col-sm-4 col-6">
+                        <img src="assets/technologies/javascript.png"></img>
+                    </div>
+                    <div class="prog-icon col-lg-2 col-md-3 col-sm-4 col-6">
+                        <img src="assets/technologies/python.png"></img>
+                    </div>
+                    <div class="prog-icon col-lg-2 col-md-3 col-sm-4 col-6">
+                        <img src="assets/technologies/react.png"></img>
+                    </div>
+                    <div class="prog-icon col-lg-2 col-md-6 col-sm-4 col-6">
+                        <img src="assets/technologies/swift.png"></img>
+                    </div>
+                    <div class="prog-icon col-lg-2 col-md-6 col-sm-4 col-6">
+                        <img src="assets/technologies/unity.png"></img>
+                    </div>
+                </div>
+            </div>
+            <div class="next-page-button-container mt-auto bounce">
+                <button class="next-page-button b4">
+                    <img src="assets/down-arrow.svg" />
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <footer class="container-fluid ">
+        <div class="container footer-container">
+            
+            <div class="footer-section footer-logo">
+                <img src="assets/LogiGoatOutline-03.png"/>
+            </div>
+
+            <div class="footer-section footer-connect">
+                <span class="footer-title">Connect With Us</span>
+                <div class="footer-section-content">
+                    
+                    <div class="social-media">
+                        <a target="_blank" href="mailto:info@logigoat.com">
+                            <i class="fa fa-envelope" aria-hidden="true"></i>
+                            <span>info@logigoat.com</span>
+                        </a> 
+                    </div>
+                    
+                    <div class="social-media">
+                        <a target="_blank" href="https://wa.me/50375392540">
+                            <i class="fa fa-whatsapp" aria-hidden="true"></i>
+                            <span>+503 7539-2540</span>
+                        </a>
+                    </div>
+
+                    <div class="social-media">
+                        <a target="_blank" href="https://www.facebook.com/LogiGoat-107881404325019">
+                            <i class="fa fa-facebook-official" aria-hidden="true"></i>
+                            <span>Facebook</span>
+                        </a>
+                    </div>
+                    
+                    <div class="social-media">
+                        <a target="_blank" href="https://www.instagram.com/logigoat/">
+                            <i class="fa fa-instagram" aria-hidden="true"></i>
+                            <span>Instagram</span>
+                        </a>
+                    </div>
+                    
+                </div>
+            </div>
+                        
+            <div class="footer-section footer-contact-form">
+                <span class="footer-title">Send A Message</span>
+                <div class="footer-section-content">
+                    <div class="form-container d-flex flex-column">
+                        <div class="field d-flex flex-column">
+                            <input form="contact-form" placeholder="E-mail" name="email" type="email" required>
+                        </div>
+                        <div class="field d-flex flex-column">
+                                <input form="contact-form" placeholder="Name" name="name" type="text" required>
+                        </div>
+
+                        <div class="field message d-flex flex-column">
+                            <textarea form="contact-form" placeholder="Comment or message" name="message" required></textarea>
+                        </div>
+                        
+                        <input type="hidden" form="contact-form" name="origin" value="home">
+
+                        <button form="contact-form" type="submit" class="button form-button">Send</button>
+                    </div>
+                </div>
+                <form action='mail.php' id="contact-form" method="post"></form>
+            </div>
+            
+        </div>
+        <div class="container social-media-container">
+
+        </div>
+    </footer>
+</body>
+
+
+<!-- Bootstrap scripts -->
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+<!-- Jquery navbar -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="js/scripts.js"></script>
+
+<script type="module">
+    // Import the functions you need from the SDKs you need
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/9.6.9/firebase-app.js";
+    import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.6.9/firebase-analytics.js";
+    // TODO: Add SDKs for Firebase products that you want to use
+    // https://firebase.google.com/docs/web/setup#available-libraries
+
+    // Your web app's Firebase configuration
+    // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+    const firebaseConfig = {
+        apiKey: "AIzaSyBz0yvDKeaUplQDZp9qV2_jhJBwIkcRLKg",
+        authDomain: "logigoat-website.firebaseapp.com",
+        projectId: "logigoat-website",
+        storageBucket: "logigoat-website.appspot.com",
+        messagingSenderId: "167864201084",
+        appId: "1:167864201084:web:adfd9bfb2f3964e20cfef9",
+        measurementId: "G-BW4R179955"
+    };
+
+    // Initialize Firebase
+    const app = initializeApp(firebaseConfig);
+    const analytics = getAnalytics(app);
+</script>
+
+</html>
