@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-179019405-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-179019405-1');
+</script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="shortcut icon" type="image/x-icon" href="assets/favicon.ico" /> 
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Career</title>
+</head>
+<body>
+    <nav class="page-nav">
+        <div class="container-fluid">
+            <div class="logo">
+                <a href="index.html">                    
+                    <span style="color:black">Javier</span><b style="color:#EC651E">Cladellas</b>
+                </a> 
+            </div>
+            <div id="mainListDiv" class="main_list">
+                <ul class="navlinks">
+                    <li><a class="nav-btn active" href="index.html">Home</a></li>
+                    <li><a class="nav-btn" href="about.html">About</a></li>
+                    <li><a class="nav-btn" href="services.html">Services</a></li>
+                    <li><a class="nav-btn" href="career.html">Career</a></li>
+                    <li><a class="nav-btn" href="work.html">Portfolio</a></li>
+                    <!-- <li><a class="nav-btn" href="contact.html">Contact</a></li> -->
+                </ul>
+            </div>
+            <span class="page-navTrigger">
+                <i></i>
+                <i></i>
+                <i></i>
+            </span>
+        </div>
+    </nav>
+
+    <modal id="cs_contact_modal">
+        <div class="modal-content">
+            <a href="#" title="Close" class="modal-close">✖</a>
+            <u class="text-center" style="margin-bottom: 25px;">Professional Reference</u>
+            <h2 id="cv_ref_name" class="text-center"></h2>
+            <div class="cv-reference-text">
+                <i id="cv_ref_pos" style="font-size:18px;"></i>
+                <i id="cv_ref_com" style="font-size:18px;color:#EC651E;"></i>
+                <i id="cv_ref_tel" style="font-size:18px;"></i>
+                <a id="cv_ref_mail" style="font-size:18px;"></a>
+            </div>
+        </div>
+    </modal>
+
+    <section class="page ws-page ws-career">
+        <div class="page-container container-fluid">
+            <div>
+                <h1 class="page-title">
+                    <i class="fa fa-minus" aria-hidden="true"></i> 
+                       EXPERIENCE
+                    <i class="fa fa-minus" aria-hidden="true"></i>
+                </h1>
+            </div>
+            <div class="text-container my-auto">
+                
+                <div id="sa" class="text cv-item">
+                    <div style="display:flex; justify-content: flex-start;">
+                        <div class="cv-logo-container" style="min-width: 200px; display: flex; align-items: center; justify-content: center;">
+                            <img src="assets/SA.png" style="width:70px;"/>
+                        </div>
+                        <div>
+                            <h2 style="color:#EC651E; text-align: left; font-size: 28px; margin-bottom: 0;"> Seguros Azul S.A.</h2>
+                            <div class="date-container"><u>Actuarial Consultant</u><span> - </span><i style="font-size: 18px;">May. 2021 - Currently</i> <br></div>
+                            <ul>
+                                <li>Analyse and elaborate technical notes of the company products.</li>   
+                                <li>Calculate multiple actuarial provisions.</li>
+                                <li>Compute premiums and charges for life, medical, motor, credit card and other insurance products.</li>   
+                            </ul>
+                        </div>
+                    </div>
+                </div> 
+                
+                <br><br>
+                
+                <div id="cemosis" class="text cv-item">
+                    <div style="display:flex; justify-content: flex-start;">
+                        <div class="cv-logo-container" style="min-width: 200px; display: flex; align-items: center; justify-content: center;">
+                            <img src="assets/cemosis.png" style="width:150px;"/>
+                        </div>
+                        <div>
+                            <h2 style="color:#EC651E; text-align: left; font-size: 28px; margin-bottom: 0;"> Center for Modeling and Simulation of Strasbourg</h2>
+                            <div class="date-container"><u>Intern</u><span> - </span><i style="font-size: 18px;">Jun. 2022 - Sep. 2022</i> <br></div>
+                            <ul>
+                                <li>
+                                    Develop a platform for data visualization and treatment for energy simulations and comfort assesment.
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div> 
+                
+                <br><br>
+
+                <div id="esen" class="text cv-item">
+                    <div style="display:flex; justify-content: flex-start;">
+                        <div class="cv-logo-container" style="min-width: 200px; display: flex; align-items: center; justify-content: center;">
+                            <img src="assets/esen.png" style="width: 150px;"/>
+                        </div>
+                        <div>
+                            <h2 style="color:#EC651E; text-align: left; font-size: 28px; margin-bottom: 0;"> Escuela Superior de Economía y Negocios</h2>
+                            <div class="date-container"><u>Mathematics Lecturer</u><span> - </span><i style="font-size: 18px;">Jan. 2021 - Jan. 2022</i> <br></div>
+                            <ul>
+                                <li>
+                                    Teach the mathematics I, II and algebra I courses to first and second university year students.
+                                </li>
+                            </ul>
+                        </div>
+                    </div> 
+                </div>
+
+                <br><br>
+
+                <div id="ssf" class="text cv-item">
+                    <div style="display:flex; justify-content: flex-start;">
+                        <div class="cv-logo-container" style="min-width: 200px; display: flex; align-items: center; justify-content: center;">
+                            <img src="assets/ssf.png" style="width: 150px;"/>
+                        </div>
+                        <div>
+                            <h2 style="color:#EC651E; text-align: left; font-size: 28px; margin-bottom: 0;"> Superintendencia del Sistema Financiero</h2>
+                            <div class="date-container"><u>Data Scientist</u><span> - </span><i style="font-size: 18px;">Sep. 2020 - May. 2021</i> <br></div>
+                            <ul>
+                                <li>Develop mathematical models and use ML models to estimate Expected Credit Losses and default probabilities of credit users in El Salvador.</li>
+                                <li>Identify suspicious operations of the financial entities of the country using unsupervised learning algorithms.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div> 
+
+                <br><br>
+
+                <div id="logigoat" class="text cv-item">
+                    <div style="display:flex; justify-content: flex-start;">
+                        <div class="cv-logo-container" style="min-width: 200px; display: flex; align-items: center; justify-content: center;">
+                            <img src="assets/LogiGoatOutline-04.png" style="width: 150px;"/>
+                        </div>
+                        <div>
+                            <h2 style="color:#EC651E; text-align: left; font-size: 28px; margin-bottom: 0;"> Logigoat</h2>
+                            <div class="date-container"><u>Startup Creator</u><span> - </span><i style="font-size: 18px;">Sep. 2020 - May. 2021</i> <br></div>
+                            <ul>
+                                <li>Manage freelance teams in web and mobile development.</li>
+                                <li>Develop software, websites, mobile applications and landing pages.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <br><br>
+
+                <div id="ufg" class="text cv-item">
+                    <div style="display:flex; justify-content: flex-start;">
+                        <div class="cv-logo-container" style="min-width: 200px; display: flex; align-items: center; justify-content: center;">
+                            <img src="assets/ufg.png" style="width: 150px;"/>
+                        </div>
+                        <div>
+                            <h2 style="color:#EC651E; text-align: left; font-size: 28px; margin-bottom: 0;"> Universidad Francisco Gavidia</h2>
+                            <div class="date-container"><u>Researcher</u><span> - </span><i style="font-size: 18px;">Jul. 2019 - Sep. 2020</i> <br></div>
+                            <ul>
+                                <li>Develop mathematical and statistical models for the Mathematics Modeling Center (CMMC3).</li>
+                                <li>Publish papers about COVID-19 and other models.</li>
+                                <li>Work side by side with the Salvadoran Foundation for Economic and Social Development (FUSADES) and with the Central American Integration System (SICA) to offer solutions to the pandemic in El Salvador.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <h1 class="page-title">
+                        <i class="fa fa-minus" aria-hidden="true"></i> 
+                        EDUCATION
+                        <i class="fa fa-minus" aria-hidden="true"></i>
+                    </h1>
+                </div>
+                <div class="text-container my-auto ">
+                    <div id="fac_m" class="text cv-item">
+                        <div style="display:flex; justify-content: flex-start;">
+                            <div class="cv-logo-container" style="min-width: 200px; display: flex; align-items: center; justify-content: center;">
+                                <img src="assets/fac.png" style="width: 200px;"/>
+                            </div>
+                            <div>
+                                <h2 style="color:#EC651E; text-align: left; font-size: 28px; margin-bottom: 0;"> University of Strasbourg</h2>
+                                <div class="date-container"><u>Master's degree</u><span> - </span><i style="font-size: 18px;">Sep. 2021 - Jun. 2023</i> <br></div>
+                                Applied Mathematics: Scientific Computing and Information Mathematics (CSMI).
+                            </div>
+                        </div>
+                    </div>
+
+                    <br><br>
+
+                    <div id="fac_l" class="text cv-item">
+                        <div style="display:flex; justify-content: flex-start;">
+                            <div class="cv-logo-container" style="min-width: 200px; display: flex; align-items: center; justify-content: center;">
+                                <img src="assets/fac.png" style="width: 200px;"/>
+                            </div>
+                            <div>
+                                <h2 style="color:#EC651E; text-align: left; font-size: 28px; margin-bottom: 0;"> University of Strasbourg</h2>
+                                <div class="date-container"><u>Bachelor's degree</u><span> - </span><i style="font-size: 18px;">Sep. 2016 - Jun. 2019</i> <br></div>
+                                Pure Mathematics
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button id="download_cv" class="button page-button" style="align-self: flex-end;"><a href="./assets/CV FR Javier Cladellas.pdf" download="CV Javier Cladellas.pdf" target="_blank" style="text-decoration: none; color:#EC651E">Download my resume</a></button>
+            </div>
+        </div>
+    </section>
+    
+    <footer class="container-fluid ">
+        <div class="container footer-container">
+            
+            <div class="footer-section footer-logo">
+                <img src="assets/tesseract.png"/>
+            </div>
+
+            <div class="footer-section footer-connect">
+                <span class="footer-title">Contact me</span>
+                <div class="footer-section-content">
+                    
+                    <div class="social-media">
+                        <a target="_blank" href="mailto:info@logigoat.com">
+                            <i class="fa fa-envelope" aria-hidden="true"></i>
+                            <span>javiercladellas@gmail.com</span>
+                        </a> 
+                    </div>
+                    
+                    <div class="social-media">
+                        <a target="_blank" href="https://wa.me/50375392540">
+                            <i class="fa fa-whatsapp" aria-hidden="true"></i>
+                            <span>+33 6 51 51 48 67</span>
+                        </a>
+                    </div>
+
+                    <div class="social-media">
+                        <a target="_blank" href="https://www.linkedin.com/in/javiercladellas/">
+                            <i class="fa fa-linkedin" aria-hidden="true"></i>
+                            <span>JavierCladellas</span>
+                        </a>
+                    </div>
+
+                    <div class="social-media">
+                        <a target="_blank" href="https://github.com/JavierCladellas">
+                            <i class="fa fa-github" aria-hidden="true"></i>
+                            <span>JavierCladellas</span>
+                        </a>
+                    </div>
+                    <!-- 
+                    <div class="social-media">
+                        <a target="_blank" href="https://twitter.com/CladellasJavier">
+                            <i class="fa fa-twitter" aria-hidden="true"></i>
+                            <span>CladellasJavier</span>
+                        </a>
+                    </div>
+
+                    <div class="social-media">
+                        <a target="_blank" href="https://www.instagram.com/javiercladellas">
+                            <i class="fa fa-instagram" aria-hidden="true"></i>
+                            <span>javiercladellas</span>
+                        </a>
+                    </div>
+                     -->
+                </div>
+            </div>
+                        
+            <div class="footer-section footer-contact-form">
+                <span class="footer-title">Send A Message</span>
+                <div class="footer-section-content">
+                    <div class="form-container d-flex flex-column">
+                        <div class="field d-flex flex-column">
+                            <input form="contact-form" placeholder="E-mail" name="email" type="email" required>
+                        </div>
+                        <div class="field d-flex flex-column">
+                                <input form="contact-form" placeholder="Name" name="name" type="text" required>
+                        </div>
+
+                        <div class="field message d-flex flex-column">
+                            <textarea form="contact-form" placeholder="Comment or message" name="message" required></textarea>
+                        </div>
+
+                        <input type="hidden" form="contact-form" name="origin" value="contact">
+
+                        <button disabled="true" form="contact-form" type="submit" class="button form-button">Send</button>
+                    </div>
+                </div>
+                <form action='mail.php' id="contact-form" method="post"></form>
+            </div>
+            
+        </div>
+        <div class="container social-media-container">
+
+        </div>
+    </footer>
+</body>
+
+
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+<script>
+    $("#cs_contact_modal").hide();
+    $(".modal-close").click(function(e){
+        e.preventDefault();
+        $("#cs_contact_modal").hide();
+    })
+    $(".cv-item").click(function(e){
+        e.preventDefault();
+        var card_id = $(this).attr('id');
+        if (card_id == "sa"){
+            $("#cv_ref_name").text("Pedro Geoffroy");
+            $("#cv_ref_pos").text("Executive Vice-President");
+            $("#cv_ref_com").text("Seguros Azul S.A.");
+            $("#cv_ref_tel").text("+503 22 99 30 00");
+            $("#cv_ref_mail").attr("href","mailto:pgeoffroy@segurosazul.com");
+            $("#cv_ref_mail").text("pgeoffroy@segurosazul.com");
+            $("#cs_contact_modal").show();
+        }
+        else if (card_id == "cemosis"){
+            $("#cv_ref_name").text("Christophe Prud'homme");
+            $("#cv_ref_pos").text("Director");
+            $("#cv_ref_com").text("Cemosis");
+            $("#cv_ref_tel").text("+33 3 68 85 02 71");
+            $("#cv_ref_mail").attr("href","mailto:christophe.prudhomme@cemosis.fr");
+            $("#cv_ref_mail").text("christophe.prudhomme@cemosis.fr");
+            $("#cs_contact_modal").show();
+        }
+        else if (card_id == "esen"){
+            $("#cv_ref_name").text("Carolina Rovira");
+            $("#cv_ref_pos").text("Dean");
+            $("#cv_ref_com").text("Economy and Business Faculty, ESEN");
+            $("#cv_ref_tel").text("+503 22 34 92 92");
+            $("#cv_ref_mail").attr("href","mailto:crovira@esen.edu.sv");
+            $("#cv_ref_mail").text("crovira@esen.edu.sv");
+            $("#cs_contact_modal").show();
+        }
+        else if (card_id == "ssf"){
+            $("#cv_ref_name").text("Eduardo Aguilar");
+            $("#cv_ref_pos").text("Director");
+            $("#cv_ref_com").text("Information Headquarters, SSF");
+            $("#cv_ref_tel").text("+503 22 34 92 92");
+            $("#cv_ref_mail").attr("href","mailto:earnoldo.aguilar@gmail.com");
+            $("#cv_ref_mail").text("earnoldo.aguilar@gmail.com");
+            $("#cs_contact_modal").show();
+        }
+        else if (card_id == "ufg"){
+            $("#cv_ref_name").text("Oscar Picardo");
+            $("#cv_ref_pos").text("Director");
+            $("#cv_ref_com").text("Institute of Science, Technology and Innovation, UFG");
+            $("#cv_ref_tel").text("+503 22 49 27 18");
+            $("#cv_ref_mail").attr("href","mailto:opicardoj@ufg.edu.sv");
+            $("#cv_ref_mail").text("opicardoj@ufg.edu.sv");
+            $("#cs_contact_modal").show();
+        }
+        else if (card_id == "fac_m"){
+            $("#cv_ref_name").text("Christophe Prud'homme");
+            $("#cv_ref_pos").text("Director of the Master's program");
+            $("#cv_ref_com").text("UFR Math-Info, UNISTRA");
+            $("#cv_ref_tel").text("+33 3 68 85 02 00");
+            $("#cv_ref_mail").attr("href","mailto:christophe.prudhomme@unistra.fr");
+            $("#cv_ref_mail").text("christophe.prudhomme@unistra.fr");
+            $("#cs_contact_modal").show();
+        }
+        else{
+            $("#cs_contact_modal").hide();
+        }
+    });
+</script>
+
+<!-- Jquery navbar -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="js/scripts.js"></script>
+<script type="module">
+    // Import the functions you need from the SDKs you need
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/9.6.9/firebase-app.js";
+    import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.6.9/firebase-analytics.js";
+    // TODO: Add SDKs for Firebase products that you want to use
+    // https://firebase.google.com/docs/web/setup#available-libraries
+
+    // Your web app's Firebase configuration
+    // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+    const firebaseConfig = {
+        apiKey: "AIzaSyBz0yvDKeaUplQDZp9qV2_jhJBwIkcRLKg",
+        authDomain: "logigoat-website.firebaseapp.com",
+        projectId: "logigoat-website",
+        storageBucket: "logigoat-website.appspot.com",
+        messagingSenderId: "167864201084",
+        appId: "1:167864201084:web:adfd9bfb2f3964e20cfef9",
+        measurementId: "G-BW4R179955"
+    };
+
+    // Initialize Firebase
+    const app = initializeApp(firebaseConfig);
+    const analytics = getAnalytics(app);
+</script>
+</html>

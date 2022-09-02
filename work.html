@@ -18,24 +18,24 @@
     <link rel="shortcut icon" type="image/x-icon" href="assets/favicon.ico" /> 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <title>Our Work</title>
+    <title>Portfolio</title>
 </head>
 <body>
     <nav class="page-nav">
         <div class="container-fluid">
             <div class="logo">
                 <a href="index.html">
-                    <img width="auto" height="50px" src="assets/LogiGoatOutline-50px-02.png">
-                    <span style="color:black">Logi</span><b style="color:#EC651E">Goat</b>
+                    <span style="color:black">Javier</span><b style="color:#EC651E">Cladellas</b>
                 </a> 
             </div>
             <div id="mainListDiv" class="main_list">
                 <ul class="navlinks">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="services.html">Services</a></li>
-                    <li><a href="work.html">Work</a></li>
-                    <li><a href="contact.html">Contact</a></li>
+                    <li><a class="nav-btn active" href="index.html">Home</a></li>
+                    <li><a class="nav-btn" href="about.html">About</a></li>
+                    <li><a class="nav-btn" href="services.html">Services</a></li>
+                    <li><a class="nav-btn" href="career.html">Career</a></li>
+                    <li><a class="nav-btn" href="work.html">Portfolio</a></li>
+                    <!-- <li><a class="nav-btn" href="contact.html">Contact</a></li> -->
                 </ul>
             </div>
             <span class="page-navTrigger">
@@ -50,35 +50,53 @@
         <div class="page-container container-fluid">
             <div class="page-title-container">
                 <h1 class="page-title">
-                    <i class="fa fa-minus" aria-hidden="true"></i> 
-                    Our Work
-                    <i class="fa fa-minus" aria-hidden="true"></i>
                 </h1>
             </div>
 
-            <div class="showcase rebel-advice-landing ">
+            <div class="showcase">
                 <img class="arrow left" src="assets/down-arrow.svg" />
                 <div id="image_container">
                     <img style="display:none;" id="reb_adv_lp" class="showcase-image" src="assets/protfolio/RebelAdvice/RebelAdviceLandingPage.png"/>
-                    <img style="display:none;" id="reb_adv_ws" class="showcase-image" src="assets/protfolio/RebelAdvice/RebelAdviceWebsite.png"/>
                     <img style="display:none;" id="nota_map" class="showcase-image" src="assets/protfolio/NO2TA/MapPage.png"/>
                     <img style="display:none;" id="coffee_page" class="showcase-image" src="assets/protfolio/coffee/Coffee e-commerce.png"/>
+                    <img style="display:none;" id="ktirio_dashboard" class="showcase-image" src="assets/protfolio/ktirio/dashboard.png"/>
+                    <img style="display:none;" id="rs" class="showcase-image" src="assets/protfolio/RS/RSlist.png"/>
+                    <img style="display:none;" id="logigoat" class="showcase-image" src="assets/protfolio/logigoat/cards.png"/>
+                    <img style="display:none;" id="coagesal" class="showcase-image" src="assets/protfolio/coagesal/desk.png"/>
+                    <img style="display:none;" id="covid" class="showcase-image" src="assets/protfolio/covid/book.png"/>
                 </div>
                 <img class="arrow right" src="assets/down-arrow.svg" />
             </div>
 
+            <h1 style="padding-top:80px;" class="page-title">
+                <i class="fa fa-minus" aria-hidden="true"></i> 
+                    FIND OUT MORE
+                <i class="fa fa-minus" aria-hidden="true"></i>
+            </h1>
             <div class="portfolio-list">
-                <div class="portfolio-card">
+                <div id ="rebelAdvice_card" class="portfolio-card">
                     <img class="portfolio-card-image" src="assets/protfolio/RebelAdvice/RebelAdviceLandingPage.png"/>
                 </div>
-                <div class="portfolio-card">
-                    <img class="portfolio-card-image" src="assets/protfolio/RebelAdvice/RebelAdviceWebsite.png"/>
-                </div><!-- 
-                <div class="portfolio-card">
+                <div id ="nota_card" class="portfolio-card">
                     <img class="portfolio-card-image" src="assets/protfolio/NO2TA/MapPage.png"/>
-                </div> -->
-                <div class="portfolio-card">
+                </div>
+                <div id ="coffee_card"  class="portfolio-card">
                     <img class="portfolio-card-image" src="assets/protfolio/coffee/Coffee e-commerce.png"/>
+                </div>
+                <div  id="rs_card" class="portfolio-card">
+                    <img class="portfolio-card-image" src="assets/protfolio/rs/RSlist.png"/>
+                </div>
+                <div id ="coagesal_card" class="portfolio-card">
+                    <img class="portfolio-card-image" src="assets/protfolio/ktirio/dashboard.png"/>
+                </div>
+                <div id ="logigoat_card" class="portfolio-card">
+                    <img class="portfolio-card-image" src="assets/protfolio/logigoat/Desktop - 1.png"/>
+                </div>
+                <div id ="coagesal_card" class="portfolio-card">
+                    <img class="portfolio-card-image" src="assets/protfolio/coagesal/desk.png"/>
+                </div>
+                <div id ="covid_card" class="portfolio-card">
+                    <img class="portfolio-card-image" src="assets/protfolio/covid/book.png"/>
                 </div>
             </div>
 
@@ -89,15 +107,23 @@
     <script>
         $(document).ready(function(){
             var reb_adv_lp = ["reb_adv_lp", "rgb(250, 255, 200)","rgb(250, 255, 200,0.7)"];
-            var reb_adv_ws = ["reb_adv_ws", "rgb(230, 230, 230)","rgb(230, 230, 230,0.7)"];
             var nota_map = ["nota_map", "rgb(255, 200, 200)","rgb(255, 200, 200,0.7)"];
             var coffe_home = ["coffee_page","rgb(255,241,215)","rgb(255,241,215,0.7)"];
-            var slides = [reb_adv_lp,reb_adv_ws,nota_map,coffe_home];
+            var ktirio_dashboard = ["ktirio_dashboard", "rgba(191, 190, 233)","rgba(191, 190, 233, 0.7)"]
+            var rs = ["rs","rgba(190, 229, 232)","rgba(190, 229, 232, 0.7)"]
+            var logi = ["logigoat","rgba(170, 170, 170)","rgba(170, 170, 170, 0.7)"]
+            var coagesal = ["coagesal","rgba(165, 215, 203)","rgba(165, 215, 203, 0.7)"]
+            var covid = ["covid","rgba(242, 242, 242)","rgba(242, 242, 242, 0.7)"]
+
+            var slides = [reb_adv_lp,nota_map,coffe_home,ktirio_dashboard,rs,logi,coagesal,covid];
             var current_page = 0;
 
             $('#image_container>#'+slides[current_page][0]).show();
             $(".ws-work").css('background-color', slides[current_page][1]);
             $(".page-nav").css('background-color', slides[current_page][2]);
+            if ($(window).width() < 800) {
+                $(".navlinks").css('background-color', slides[current_page][2]);
+            }
 
             $(".arrow").click(function(){
                 if($(this).hasClass('right')){
@@ -121,6 +147,9 @@
                 $('#image_container>#'+slides[current_page][0]).show();
                 $(".ws-work").css('background-color', slides[current_page][1]);
                 $(".page-nav").css('background-color', slides[current_page][2]);
+                if ($(window).width() < 800) {
+                    $(".navlinks").css('background-color', slides[current_page][2]);
+                }
             });
 
             var maxRotation = 5; 
@@ -151,41 +180,55 @@
         <div class="container footer-container">
             
             <div class="footer-section footer-logo">
-                <img src="assets/LogiGoatOutline-03.png"/>
+                <img src="assets/tesseract.png"/>
             </div>
 
             <div class="footer-section footer-connect">
-                <span class="footer-title">Connect With Us</span>
+                <span class="footer-title">Contact me</span>
                 <div class="footer-section-content">
                     
                     <div class="social-media">
                         <a target="_blank" href="mailto:info@logigoat.com">
                             <i class="fa fa-envelope" aria-hidden="true"></i>
-                            <span>info@logigoat.com</span>
+                            <span>javiercladellas@gmail.com</span>
                         </a> 
                     </div>
                     
                     <div class="social-media">
                         <a target="_blank" href="https://wa.me/50375392540">
                             <i class="fa fa-whatsapp" aria-hidden="true"></i>
-                            <span>+503 7539-2540</span>
+                            <span>+33 6 51 51 48 67</span>
                         </a>
                     </div>
 
                     <div class="social-media">
-                        <a target="_blank" href="https://www.facebook.com/LogiGoat-107881404325019">
-                            <i class="fa fa-facebook-official" aria-hidden="true"></i>
-                            <span>Facebook</span>
+                        <a target="_blank" href="https://www.linkedin.com/in/javiercladellas/">
+                            <i class="fa fa-linkedin" aria-hidden="true"></i>
+                            <span>JavierCladellas</span>
                         </a>
                     </div>
-                    
+
                     <div class="social-media">
-                        <a target="_blank" href="https://www.instagram.com/logigoat/">
-                            <i class="fa fa-instagram" aria-hidden="true"></i>
-                            <span>Instagram</span>
+                        <a target="_blank" href="https://github.com/JavierCladellas">
+                            <i class="fa fa-github" aria-hidden="true"></i>
+                            <span>JavierCladellas</span>
                         </a>
                     </div>
-                    
+                    <!-- 
+                    <div class="social-media">
+                        <a target="_blank" href="https://twitter.com/CladellasJavier">
+                            <i class="fa fa-twitter" aria-hidden="true"></i>
+                            <span>CladellasJavier</span>
+                        </a>
+                    </div>
+
+                    <div class="social-media">
+                        <a target="_blank" href="https://www.instagram.com/javiercladellas">
+                            <i class="fa fa-instagram" aria-hidden="true"></i>
+                            <span>javiercladellas</span>
+                        </a>
+                    </div>
+                     -->
                 </div>
             </div>
                         
@@ -206,7 +249,7 @@
 
                         <input type="hidden" form="contact-form" name="origin" value="work">
 
-                        <button form="contact-form" type="submit" class="button form-button">Send</button>
+                        <button disabled="true" form="contact-form" type="submit" class="button form-button">Send</button>
                     </div>
                 </div>
                 <form action='mail.php' id="contact-form" method="post"></form>

@@ -18,15 +18,14 @@
     <link rel="stylesheet" type="text/css" href="style.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <title>LogiGoat - Web Development</title>
+    <title>JavierCladellas - Portfolio</title>
 </head>
 <body>
     <nav class="nav">
         <div class="container-fluid">
             <div class="logo">
                 <a href="index.html">
-                    <img width="auto" height="55px" src="assets/LogiGoatOutline-50px-02.png">
-                    <span style="color:#fff">Logi</span><b style="color:#EC651E">Goat</b>
+                    <span style="color:white">Javier</span><b style="color:#EC651E">Cladellas</b>
                 </a>
             </div>
             <div id="mainListDiv" class="main_list">
@@ -34,8 +33,9 @@
                     <li><a class="nav-btn active" href="index.html">Home</a></li>
                     <li><a class="nav-btn" href="about.html">About</a></li>
                     <li><a class="nav-btn" href="services.html">Services</a></li>
-                    <li><a class="nav-btn" href="work.html">Work</a></li>
-                    <li><a class="nav-btn" href="contact.html">Contact</a></li>
+                    <li><a class="nav-btn" href="career.html">Career</a></li>
+                    <li><a class="nav-btn" href="work.html">Portfolio</a></li>
+                    <!-- <li><a class="nav-btn" href="contact.html">Contact</a></li> -->
                     <li style="display:none">
                         <select name="language" id="language">
                             <option value="" disabled selected hidden>&#xf0ac;</option>
@@ -54,6 +54,8 @@
     </nav>
 
     <section class="page home-page">
+        <img src="assets/fotoJC (1).png" id="photo_bg">
+        
         <svg class="home-lines" height="100%" width="100%">
             <line class="line line-left" x1="10%" y1="0%" x2="10%" y2="100%"/>
             <line class="line line-bottom" x1="20%" y1="90%" x2="100%" y2="90%"/>
@@ -62,15 +64,15 @@
         </svg>
         <div class="container-fluid d-flex flex-column">
             <div class="titles-container">
-                <p class="home-title"><span style="color:#EC651E;" >Practical </span>solutions and <span style="color:#EC651E" >friendly</span> designs </p> 
-                <p class="home-subtitle"><span >web, mobile and software development</span></p>
+                <p class="home-title">Javier <span style="color:#EC651E" >Cladellas</span></p> 
+                <p class="home-subtitle"><span>Mathematician, data scientist and&nbsp;developer.</span></p>
             </div>
-            <div>
+            <div class="project-text-container">
                 <p class="project-text">A project in mind? </p>
             </div>
             <div class="main-button-container">
                 <button  form="go-to-contact" class="button main-button" >
-                    Goat With Us!
+                    Contact me
                 </button>
             </div>
             <form id="go-to-contact" action="contact.html"></form>
@@ -90,15 +92,13 @@
             <div>
                 <h1 class="page-title">
                     <i class="fa fa-minus" aria-hidden="true"></i> 
-                    WHAT WE DO
+                    WHAT I DO
                     <i class="fa fa-minus" aria-hidden="true"></i>
                 </h1>
             </div>
 
             <div class="text-container my-auto">
-                <div class="text">We are a web, mobile and software design company based in El Salvador. An efficient collaboration of systems engineers, programmers and graphic designers, centered on providing good quality solutions adapted to&nbsp;any&nbsp;budget.</div>
-                <br>
-                <div class="text">Our mission is to help our clients grow, innovate and endure their brands digitally, through the adoption of our leading-edge web design technology, compelling marketing strategies, and our customer-driven business&nbsp;philosophy.</div>
+                <div class="text">My mission is to help our clients grow, innovate and endure their business digitally, through the adoption of leading-edge web design technology, compelling marketing strategies, and a customer-driven business&nbsp;philosophy.</div>
             </div>
 
             <div class="container-fluid services my-auto">
@@ -107,27 +107,27 @@
                     <div onclick="document.getElementById('go-to-services').submit();" class="col-lg-2 col-md-4 col-sm-6 col-12 service-container">
                         <img width=100px src="assets/transfer-400x400.png" ></img>
                         <br>
-                        <span class="service">Web & <br> Mobile</span>
-                    </div>
-                    <div onclick="document.getElementById('go-to-services').submit();" class="col-lg-2 col-md-4 col-sm-6 col-12 service-container">
-                       <img width=100px src="assets/idea-400x400.png" ></img>
-                        <br>
-                        <span class="service">Branding & <br> Marketing</span>
+                        <span class="service">Web & Mobile <br> Development</span>
                     </div>
                     <div onclick="document.getElementById('go-to-services').submit();" class="col-lg-2 col-md-4 col-sm-6 col-12 service-container">
                        <img width=100px src="assets/code-400x400.png" ></img>
                         <br>
-                        <span class="service">Software <br> Development</span>
+                        <span class="service">software <br> Development</span>
                     </div>
                     <div onclick="document.getElementById('go-to-services').submit();" class="col-lg-2 col-md-6 col-sm-6 col-12 service-container">
-                       <img width=100px src="assets/brain-400x400.png" ></img>
+                       <img width=100px src="assets/brain.svg" ></img>
                         <br>
-                        <span class="service">Business <br> Intelligence</span>
+                        <span class="service">Machine <br> Learning</span>
                     </div>
                     <div onclick="document.getElementById('go-to-services').submit();" class="col-lg-2 col-md-6 col-sm-12 col-12 service-container">
-                       <img width=100px src="assets/security-system-400x400.png" ></img>
+                       <img width=100px src="assets/infographic.svg" ></img>
                         <br>
-                        <span class="service">Web <br> Security</span>
+                        <span class="service">BI & Data <br> Visualization</span>
+                    </div>
+                    <div onclick="document.getElementById('go-to-services').submit();" class="col-lg-2 col-md-4 col-sm-6 col-12 service-container">
+                       <img width=100px src="assets/idea-400x400.png" ></img>
+                        <br>
+                        <span class="service">Actuarial <br> Consulting</span>
                     </div>
                     <div class="col-lg-1 col-0"></div>
                 </div>
@@ -232,25 +232,25 @@
                 </h1>
             </div>
             <div class="text-container my-auto">
-                <div class="text">We have mastered many high-level languages and software to develop your ideas thoroughly, using the right features of each one of them to accelerate the developing process without losing&nbsp;any&nbsp;quality.</div>    
+                <div class="text">I have mastered many high-level languages and software to develop your ideas thoroughly, using the right features of each one of them to accelerate the developing process without losing&nbsp;any&nbsp;quality.</div>    
             </div>
 
             <div class="container-fluid prog-icons my-auto">
                 <div class="row">
                     <div class="prog-icon col-lg-2 col-md-3 col-sm-4 col-6">
-                        <img src="assets/technologies/bootsrap.png"></img>
+                        <img id="bootstrap" src="assets/technologies/bootstrap.png"></img>
                     </div>
                     <div class="prog-icon col-lg-2 col-md-3 col-sm-4 col-6">
-                        <img src="assets/technologies/android.png"></img>
+                        <img src="assets/technologies/tf.png"></img>
                     </div>
                     <div class="prog-icon col-lg-2 col-md-3 col-sm-4 col-6">
-                        <img src="assets/technologies/angular.png"></img>
+                        <img src="assets/technologies/matlab.png"></img>
                     </div>
                     <div class="prog-icon col-lg-2 col-md-3 col-sm-4 col-6">
                         <img src="assets/technologies/c++.png"></img>
                     </div>
                     <div style="padding-left:0px" class="prog-icon col-lg-2 col-md-3 col-sm-4 col-6">
-                        <img src="assets/technologies/php.png"></img>
+                        <img  id="php" src="assets/technologies/php.png"></img>
                     </div>
                     <div class="prog-icon col-lg-2 col-md-3 col-sm-4 col-6">
                         <img src="assets/technologies/csharp.png"></img>
@@ -265,13 +265,13 @@
                         <img src="assets/technologies/ionic.png"></img>
                     </div>
                     <div class="prog-icon col-lg-2 col-md-3 col-sm-4 col-6">
-                        <img src="assets/technologies/ios.png"></img>
+                        <img id="plotly" src="assets/technologies/plotly.png"></img>
                     </div>
                     <div style="padding-left:0px" class="prog-icon col-lg-2 col-md-3 col-sm-4 col-6">
                         <img src="assets/technologies/jquery.png"></img>
                     </div> 
                     <div class="prog-icon col-lg-2 col-md-3 col-sm-4 col-6">
-                        <img src="assets/technologies/java.png"></img>
+                        <img id="spark" src="assets/technologies/spark.png"></img>
                     </div>    
                     <div style="padding-left:0px" class="prog-icon col-lg-2 col-md-3 col-sm-4 col-6">
                         <img src="assets/technologies/mysql.png"></img>
@@ -283,10 +283,10 @@
                         <img src="assets/technologies/python.png"></img>
                     </div>
                     <div class="prog-icon col-lg-2 col-md-3 col-sm-4 col-6">
-                        <img src="assets/technologies/react.png"></img>
+                        <img src="assets/technologies/blender.png"></img>
                     </div>
                     <div class="prog-icon col-lg-2 col-md-6 col-sm-4 col-6">
-                        <img src="assets/technologies/swift.png"></img>
+                        <img src="assets/technologies/BI.png"></img>
                     </div>
                     <div class="prog-icon col-lg-2 col-md-6 col-sm-4 col-6">
                         <img src="assets/technologies/unity.png"></img>
@@ -305,41 +305,55 @@
         <div class="container footer-container">
             
             <div class="footer-section footer-logo">
-                <img src="assets/LogiGoatOutline-03.png"/>
+                <img src="assets/tesseract.png"/>
             </div>
 
             <div class="footer-section footer-connect">
-                <span class="footer-title">Connect With Us</span>
+                <span class="footer-title">Contact me</span>
                 <div class="footer-section-content">
                     
                     <div class="social-media">
                         <a target="_blank" href="mailto:info@logigoat.com">
                             <i class="fa fa-envelope" aria-hidden="true"></i>
-                            <span>info@logigoat.com</span>
+                            <span>javiercladellas@gmail.com</span>
                         </a> 
                     </div>
                     
                     <div class="social-media">
                         <a target="_blank" href="https://wa.me/50375392540">
                             <i class="fa fa-whatsapp" aria-hidden="true"></i>
-                            <span>+503 7539-2540</span>
+                            <span>+33 6 51 51 48 67</span>
                         </a>
                     </div>
 
                     <div class="social-media">
-                        <a target="_blank" href="https://www.facebook.com/LogiGoat-107881404325019">
-                            <i class="fa fa-facebook-official" aria-hidden="true"></i>
-                            <span>Facebook</span>
+                        <a target="_blank" href="https://www.linkedin.com/in/javiercladellas/">
+                            <i class="fa fa-linkedin" aria-hidden="true"></i>
+                            <span>JavierCladellas</span>
                         </a>
                     </div>
-                    
+
                     <div class="social-media">
-                        <a target="_blank" href="https://www.instagram.com/logigoat/">
-                            <i class="fa fa-instagram" aria-hidden="true"></i>
-                            <span>Instagram</span>
+                        <a target="_blank" href="https://github.com/JavierCladellas">
+                            <i class="fa fa-github" aria-hidden="true"></i>
+                            <span>JavierCladellas</span>
                         </a>
                     </div>
-                    
+                    <!-- 
+                    <div class="social-media">
+                        <a target="_blank" href="https://twitter.com/CladellasJavier">
+                            <i class="fa fa-twitter" aria-hidden="true"></i>
+                            <span>CladellasJavier</span>
+                        </a>
+                    </div>
+
+                    <div class="social-media">
+                        <a target="_blank" href="https://www.instagram.com/javiercladellas">
+                            <i class="fa fa-instagram" aria-hidden="true"></i>
+                            <span>javiercladellas</span>
+                        </a>
+                    </div>
+                     -->
                 </div>
             </div>
                         
@@ -360,7 +374,7 @@
                         
                         <input type="hidden" form="contact-form" name="origin" value="home">
 
-                        <button form="contact-form" type="submit" class="button form-button">Send</button>
+                        <button disabled="true" form="contact-form" type="submit" class="button form-button">Send</button>
                     </div>
                 </div>
                 <form action='mail.php' id="contact-form" method="post"></form>
