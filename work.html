@@ -86,7 +86,7 @@
                 <div  id="rs_card" class="portfolio-card">
                     <img class="portfolio-card-image" src="assets/protfolio/RS/RSlist.png"/>
                 </div>
-                <div id ="coagesal_card" class="portfolio-card">
+                <div id ="ktirio_card" class="portfolio-card">
                     <img class="portfolio-card-image" src="assets/protfolio/ktirio/dashboard.png"/>
                 </div>
                 <div id ="logigoat_card" class="portfolio-card">
@@ -171,6 +171,99 @@
                 $(".showcase-image").css("-webkit-transform", "perspective(" + perspective +    ") rotateX("+pos[1]+"deg) rotateY("+pos[0]+"deg)");
             });
 
+
+            $(".portfolio-card").click(function(e){
+                e.preventDefault();
+                var clicked_card_id = $(this).attr("id");
+                if (clicked_card_id == "rebelAdvice_card"){
+                    
+                    $("html, body").animate({ scrollTop: 0 }, "fast");
+                    $('#image_container>img').hide();
+                    $('#image_container>#'+reb_adv_lp[0]).show();
+                    $(".ws-work").css('background-color', reb_adv_lp[1]);
+                    $(".page-nav").css('background-color', reb_adv_lp[2]);
+                    if ($(window).width() < 800) {
+                        $(".navlinks").css('background-color', reb_adv_lp[2]);
+                    }
+                }
+                else if (clicked_card_id == "nota_card"){
+                    
+                    $("html, body").animate({ scrollTop: 0 }, "fast");
+                    $('#image_container>img').hide();
+                    $('#image_container>#'+nota_map[0]).show();
+                    $(".ws-work").css('background-color', nota_map[1]);
+                    $(".page-nav").css('background-color', nota_map[2]);
+                    if ($(window).width() < 800) {
+                        $(".navlinks").css('background-color', nota_map[2]);
+                    }
+                }
+                else if (clicked_card_id == "coffee_card"){
+                    
+                    $("html, body").animate({ scrollTop: 0 }, "fast");
+                    $('#image_container>img').hide();
+                    $('#image_container>#'+coffe_home[0]).show();
+                    $(".ws-work").css('background-color', coffe_home[1]);
+                    $(".page-nav").css('background-color', coffe_home[2]);
+                    if ($(window).width() < 800) {
+                        $(".navlinks").css('background-color', coffe_home[2]);
+                    }
+                }
+                else if (clicked_card_id == "rs_card"){
+                    
+                    $("html, body").animate({ scrollTop: 0 }, "fast");
+                    $('#image_container>img').hide();
+                    $('#image_container>#'+rs[0]).show();
+                    $(".ws-work").css('background-color', rs[1]);
+                    $(".page-nav").css('background-color', rs[2]);
+                    if ($(window).width() < 800) {
+                        $(".navlinks").css('background-color', rs[2]);
+                    }
+                }
+                else if (clicked_card_id == "ktirio_card"){
+                    
+                    $("html, body").animate({ scrollTop: 0 }, "fast");
+                    $('#image_container>img').hide();
+                    $('#image_container>#'+ktirio_dashboard[0]).show();
+                    $(".ws-work").css('background-color', ktirio_dashboard[1]);
+                    $(".page-nav").css('background-color', ktirio_dashboard[2]);
+                    if ($(window).width() < 800) {
+                        $(".navlinks").css('background-color', ktirio_dashboard[2]);
+                    }
+                }
+                else if (clicked_card_id == "logigoat_card"){
+                    
+                    $("html, body").animate({ scrollTop: 0 }, "fast");
+                    $('#image_container>img').hide();
+                    $('#image_container>#'+logi[0]).show();
+                    $(".ws-work").css('background-color', logi[1]);
+                    $(".page-nav").css('background-color', logi[2]);
+                    if ($(window).width() < 800) {
+                        $(".navlinks").css('background-color', logi[2]);
+                    }
+                }
+                else if (clicked_card_id == "coagesal_card"){
+                    
+                    $("html, body").animate({ scrollTop: 0 }, "fast");
+                    $('#image_container>img').hide();
+                    $('#image_container>#'+coagesal[0]).show();
+                    $(".ws-work").css('background-color', coagesal[1]);
+                    $(".page-nav").css('background-color', coagesal[2]);
+                    if ($(window).width() < 800) {
+                        $(".navlinks").css('background-color', coagesal[2]);
+                    }
+                }
+                else if (clicked_card_id == "covid_card"){
+                    
+                    $("html, body").animate({ scrollTop: 0 }, "fast");
+                    $('#image_container>img').hide();
+                    $('#image_container>#'+covid[0]).show();
+                    $(".ws-work").css('background-color', covid[1]);
+                    $(".page-nav").css('background-color', covid[2]);
+                    if ($(window).width() < 800) {
+                        $(".navlinks").css('background-color', covid[2]);
+                    }
+                }
+            });
 
         });
 
