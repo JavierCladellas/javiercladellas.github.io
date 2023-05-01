@@ -235,12 +235,12 @@
             <div class="showcase">
                 <img class="arrow left" src="assets/down-arrow.svg" />
                 <div id="image_container">
-                    <img style="display:none;" id="reb_adv_lp" class="showcase-image" src="assets/protfolio/RebelAdvice/RebelAdviceLandingPage.png"/>
-                    <img style="display:none;" id="nota_map" class="showcase-image" src="assets/protfolio/NO2TA/MapPage.png"/>
                     <img style="display:none;" id="ktirio_dashboard" class="showcase-image" src="assets/protfolio/ktirio/dashboard.png"/>
-                    <img style="display:none;" id="rs" class="showcase-image" src="assets/protfolio/RS/RSlist.png"/>
-                    <img style="display:none;" id="coagesal" class="showcase-image" src="assets/protfolio/coagesal/desk.png"/>
                     <img style="display:none;" id="covid" class="showcase-image" src="assets/protfolio/covid/book.png"/>
+                    <img style="display:none;" id="rs" class="showcase-image" src="assets/protfolio/RS/RSlist.png"/>
+                    <img style="display:none;" id="nota_map" class="showcase-image" src="assets/protfolio/NO2TA/MapPage.png"/>
+                    <img style="display:none;" id="reb_adv_lp" class="showcase-image" src="assets/protfolio/RebelAdvice/RebelAdviceLandingPage.png"/>
+                    <img style="display:none;" id="coagesal" class="showcase-image" src="assets/protfolio/coagesal/desk.png"/>
                 </div>
                 <img class="arrow right" src="assets/down-arrow.svg" />
             </div>
@@ -251,23 +251,23 @@
                 <i class="fa fa-minus" aria-hidden="true"></i>
             </h1>
             <div class="portfolio-list">
-                <div id ="rebelAdvice_card" class="portfolio-card">
-                    <img class="portfolio-card-image" src="assets/protfolio/RebelAdvice/RebelAdviceLandingPage.png"/>
+                <div id ="ktirio_card" class="portfolio-card">
+                    <img class="portfolio-card-image" src="assets/protfolio/ktirio/dashboard.png"/>
                 </div>
-                <div id ="nota_card" class="portfolio-card">
-                    <img class="portfolio-card-image" src="assets/protfolio/NO2TA/MapPage.png"/>
+                <div id ="covid_card" class="portfolio-card">
+                    <img class="portfolio-card-image" src="assets/protfolio/covid/book.png"/>
                 </div>
                 <div  id="rs_card" class="portfolio-card">
                     <img class="portfolio-card-image" src="assets/protfolio/RS/RSlist.png"/>
                 </div>
-                <div id ="ktirio_card" class="portfolio-card">
-                    <img class="portfolio-card-image" src="assets/protfolio/ktirio/dashboard.png"/>
+                <div id ="nota_card" class="portfolio-card">
+                    <img class="portfolio-card-image" src="assets/protfolio/NO2TA/MapPage.png"/>
+                </div>
+                <div id ="rebelAdvice_card" class="portfolio-card">
+                    <img class="portfolio-card-image" src="assets/protfolio/RebelAdvice/RebelAdviceLandingPage.png"/>
                 </div>
                 <div id ="coagesal_card" class="portfolio-card">
                     <img class="portfolio-card-image" src="assets/protfolio/coagesal/desk.png"/>
-                </div>
-                <div id ="covid_card" class="portfolio-card">
-                    <img class="portfolio-card-image" src="assets/protfolio/covid/book.png"/>
                 </div>
             </div>
 
@@ -320,7 +320,14 @@
             var coagesal = ["coagesal","rgba(165, 215, 203)","rgba(165, 215, 203, 0.7)"]
             var covid = ["covid","rgba(242, 242, 242)","rgba(242, 242, 242, 0.7)"]
 
-            var slides = [reb_adv_lp,nota_map,ktirio_dashboard,rs,coagesal,covid];
+            var slides = [
+                ktirio_dashboard,
+                covid,
+                rs,
+                nota_map,
+                reb_adv_lp,
+                coagesal
+            ];
             var current_page = 0;
 
             $('#image_container>#'+slides[current_page][0]).show();
