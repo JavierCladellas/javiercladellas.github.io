@@ -1942,3 +1942,31 @@ modal{
         }
     }
 }
+
+@media screen and (max-width:900px){
+    .portfolio-info{
+        flex-direction: column;
+        .info-photo-caroussel-container{
+            width: 100% !important;
+            height: auto;
+            margin-bottom: 20px;
+            .info-image{
+                max-width: 100%;
+                max-height: calc(90vh - 217px);
+            }
+        }
+        .portfolio-info-text{
+            width: 100% !important;
+            >div{
+                flex-direction: row;
+                width: 100% !important;
+                >p{
+                    text-align: right;
+                }
+            }
+            .info-technologies{
+                flex-direction: column !important;
+            }
+        }
+    }
+}

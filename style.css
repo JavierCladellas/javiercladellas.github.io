@@ -1812,4 +1812,32 @@ modal .modal-close:hover {
   max-width: 90%;
 }
 
+@media screen and (max-width: 900px) {
+  .portfolio-info {
+    flex-direction: column;
+  }
+  .portfolio-info .info-photo-caroussel-container {
+    width: 100% !important;
+    height: auto;
+    margin-bottom: 20px;
+  }
+  .portfolio-info .info-photo-caroussel-container .info-image {
+    max-width: 100%;
+    max-height: calc(90vh - 217px);
+  }
+  .portfolio-info .portfolio-info-text {
+    width: 100% !important;
+  }
+  .portfolio-info .portfolio-info-text > div {
+    flex-direction: row;
+    width: 100% !important;
+  }
+  .portfolio-info .portfolio-info-text > div > p {
+    text-align: right;
+  }
+  .portfolio-info .portfolio-info-text .info-technologies {
+    flex-direction: column !important;
+  }
+}
+
 /*# sourceMappingURL=style.css.map */
