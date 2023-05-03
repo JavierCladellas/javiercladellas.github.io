@@ -116,7 +116,7 @@
             <div class="portfolio-info" id="rs_info" style="display: none;">
                 <div class="info-photo-caroussel-container">
                     <img class="info-arrow left" src="assets/down-arrow.svg" />
-                    <div class="info_image_container" id="rs_image_container">
+                    <div class="info_image_container" id="rs_image_container"  style="max-width:40% !important;">
                         <a href="https://demologigoat.web.app/tabs/tabs/home" target="_blank"><img id="RSlist" class="info-image" src="assets/protfolio/RS/RSlist.png"/></a>
                         <a href="https://demologigoat.web.app/tabs/tabs/home" target="_blank"><img id="RSmodalScreen" class="info-image" src="assets/protfolio/RS/RSmodalScreen.png"/></a>
                         <a href="https://demologigoat.web.app/tabs/tabs/home" target="_blank"><img id="RSHouseScreen" class="info-image" src="assets/protfolio/RS/RSHouseScreen.png"/></a>
@@ -132,7 +132,7 @@
                     <div style="display:flex;"><u class="text">Duration: </u> <p class="text"> 1 week </p></div>
                     <div style="display:flex; flex-direction: row;" class="info-technologies"><u class="text">Technologies: </u> 
                         <div class="text" style="display: flex;">
-                            <p class="text">Ionic - SASS - TypeScript - HTML - Firebase</p>
+                            <p class="text">Ionic - Sass - TypeScript - HTML - Firebase</p>
                         </div>
                     </div>
                     <br>
@@ -163,7 +163,7 @@
                     <div style="display:flex;"><u class="text">Duration: </u> <p class="text"> 9 months </p></div>
                     <div style="display:flex; flex-direction: row;" class="info-technologies"><u class="text">Technologies: </u> 
                         <div class="text" style="display: flex;">
-                            <p class="text">Python - Dash - SASS - JavaScript - HTML - Statistical Treatment</p>
+                            <p class="text">Python - Dash - Sass - JavaScript - HTML - Statistical Treatment</p>
                         </div>
                     </div>
                     <br>
@@ -232,6 +232,39 @@
                 </div>
             </div>
 
+
+            <div class="portfolio-info" id="cerema_info" style="display: none;">
+                <div class="info-photo-caroussel-container">
+                    <img class="info-arrow left" src="assets/down-arrow.svg"/>
+                    <div class="info_image_container" id="cerema_image_container">
+                        <img class="info-image" src="assets/protfolio/cerema/dataVisualization.png" />
+                        <img class="info-image" src="assets/protfolio/cerema/insertSite.png" />
+                        <img class="info-image" src="assets/protfolio/cerema/futureDatabaseSchema.jpg" />
+                    </div>
+                    <img class="info-arrow right" src="assets/down-arrow.svg"/>
+                </div>
+                <div class="flex-column portfolio-info-text" style="width:50%;">
+                    <div style="display:flex;"><u class="text">Client: </u> <p class="text">Cerema</p></div>
+                    <div style="display:flex;"><u class="text">Launch date: </u> <p class="text">31-01-2023</p></div>
+                    <div style="display:flex;"><u class="text">Duration: </u> <p class="text"> 3 months </p></div>
+                    <div style="display:flex; flex-direction: row;" class="info-technologies"><u class="text">Technologies: </u> 
+                        <div class="text" style="display: flex;">
+                            <p class="text">Python - Flask - SQL - HTML - JavaScript - Sass - Database&nbsp;Prototyping - REST&nbsp;API</p>
+                        </div>
+                    </div>
+                    <br>
+                    <div style="display:flex;">
+                        <p class="text" style="text-align: justify;">
+                            As part of a university project in collaboration with the Centre for Studies and Expertise on Risks, the Environment, Mobility and Urban Planning (Cerema),
+                            I designed and prototyped a FAIR MySQL database capable of storing large amounts of urban pavement and road marking products' optical properties.
+                            <br>
+                            I also developed a web application and a RESTful API that allows the user to insert, treat and visualize the data stored in the database.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+
             <div class="showcase">
                 <img class="arrow left" src="assets/down-arrow.svg" />
                 <div id="image_container">
@@ -240,6 +273,7 @@
                     <img style="display:none;" id="rs" class="showcase-image" src="assets/protfolio/RS/RSlist.png"/>
                     <img style="display:none;" id="nota_map" class="showcase-image" src="assets/protfolio/NO2TA/MapPage.png"/>
                     <img style="display:none;" id="reb_adv_lp" class="showcase-image" src="assets/protfolio/RebelAdvice/RebelAdviceLandingPage.png"/>
+                    <img style="display:none;" id="cerema" class="showcase-image" src="assets/protfolio/cerema/dataVisualization.png"/>
                     <img style="display:none;" id="coagesal" class="showcase-image" src="assets/protfolio/coagesal/desk.png"/>
                 </div>
                 <img class="arrow right" src="assets/down-arrow.svg" />
@@ -265,6 +299,9 @@
                 </div>
                 <div id ="rebelAdvice_card" class="portfolio-card">
                     <img class="portfolio-card-image" src="assets/protfolio/RebelAdvice/RebelAdviceLandingPage.png"/>
+                </div>
+                <div id ="cerema_card" class="portfolio-card">
+                    <img class="portfolio-card-image" src="assets/protfolio/cerema/dataVisualization.png"/>
                 </div>
                 <div id ="coagesal_card" class="portfolio-card">
                     <img class="portfolio-card-image" src="assets/protfolio/coagesal/desk.png"/>
@@ -329,6 +366,9 @@
                 else if (item_id == 'covid'){
                     $(".page-title-container>h1").text("COVID-19 Mathematical Modelling Book");
                 }
+                else if (item_id == 'cerema'){
+                    $(".page-title-container>h1").text("Cerema BRDF Database");
+                }
                 $(".page-title-container>h1").fadeIn(1000);
             });
             loadInfoCaroussel("#"+item_id+"_info");
@@ -341,6 +381,7 @@
             var rs = ["rs","rgba(190, 229, 232)","rgba(190, 229, 232, 0.7)"]
             var coagesal = ["coagesal","rgba(165, 215, 203)","rgba(165, 215, 203, 0.7)"]
             var covid = ["covid","rgba(242, 242, 242)","rgba(242, 242, 242, 0.7)"]
+            var cerema = ["cerema","rgba(255, 212, 191)","rgba(255, 212, 191, 0.7)"]
 
             var slides = [
                 ktirio_dashboard,
@@ -348,6 +389,7 @@
                 rs,
                 nota_map,
                 reb_adv_lp,
+                cerema,
                 coagesal
             ];
             var current_page = 0;
@@ -476,6 +518,17 @@
                         $(".navlinks").css('background-color', covid[2]);
                     }
                 }
+                else if (clicked_card_id == "cerema_card"){
+                    
+                    $("html, body").animate({ scrollTop: 0 }, "fast");
+                    $('.showcase').hide();
+                    openInfo("cerema");
+                    $(".ws-work").css('background-color', cerema[1]);
+                    $(".page-nav").css('background-color', cerema[2]);
+                    if ($(window).width() < 800) {
+                        $(".navlinks").css('background-color', cerema[2]);
+                    }
+                }
             });
 
             $("#image_container").click(function(e){
@@ -548,6 +601,18 @@
                     $(".page-nav").css('background-color', covid[2]);
                     if ($(window).width() < 800) {
                         $(".navlinks").css('background-color', covid[2]);
+                    }
+                }
+                
+                else if (clicked_image_id == "cerema"){
+                    
+                    $("html, body").animate({ scrollTop: 0 }, "fast");
+                    $('.showcase').hide();
+                    openInfo("cerema");
+                    $(".ws-work").css('background-color', cerema[1]);
+                    $(".page-nav").css('background-color', cerema[2]);
+                    if ($(window).width() < 800) {
+                        $(".navlinks").css('background-color', cerema[2]);
                     }
                 }
             })
