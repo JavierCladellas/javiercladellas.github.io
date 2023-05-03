@@ -212,6 +212,7 @@ html, body {
   padding-right: 3rem;
 }
 .nav div.main_list ul li select {
+  appearance: none;
   -webkit-appearance: none;
   -moz-appearance: none;
   text-indent: 1px;
@@ -1767,6 +1768,134 @@ modal .modal-close:hover {
 
 #download_cv:hover a {
   color: rgb(230, 230, 230) !important;
+}
+
+#timeline_container_wrapper {
+  display: block;
+  position: relative;
+  width: 100%;
+  height: 240px;
+}
+#timeline_container_wrapper #timeline_container {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+#timeline_container_wrapper #timeline_container .timeline-dot {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: #EC651E;
+  position: absolute;
+  z-index: 1;
+  transition: all 0.3s;
+}
+#timeline_container_wrapper #timeline_container .timeline-dot .timeline-dot-card {
+  display: none;
+  position: absolute;
+  z-index: 2;
+  flex-direction: column;
+  width: 300px;
+  background-color: rgb(230, 230, 230);
+  border-radius: 5px;
+  box-shadow: 0px 0px 30px 15px rgba(0, 0, 0, 0.15);
+  transition: all 0.3s;
+  padding-bottom: 24px;
+}
+#timeline_container_wrapper #timeline_container .timeline-dot .timeline-dot-card:hover {
+  cursor: pointer;
+}
+#timeline_container_wrapper #timeline_container .timeline-dot .timeline-dot-card .timeline-dot-card-title {
+  font-size: 20px;
+  font-weight: bold;
+  color: #505050;
+  margin: 10px;
+  text-align: center;
+}
+#timeline_container_wrapper #timeline_container .timeline-dot .timeline-dot-card .timeline-dot-card-title::selection {
+  background-color: #EC651E;
+}
+#timeline_container_wrapper #timeline_container .timeline-dot .timeline-dot-card .timeline-dot-card-text {
+  font-size: 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  color: #505050;
+  margin: 15px;
+  text-align: left;
+}
+#timeline_container_wrapper #timeline_container .timeline-dot .timeline-dot-card .timeline-dot-card-text::selection {
+  background-color: #EC651E;
+}
+#timeline_container_wrapper #timeline_container .timeline-dot:hover {
+  cursor: pointer;
+  background-color: #505050;
+}
+#timeline_container_wrapper #timeline_container .timeline-dot:hover .timeline-dot-card {
+  display: flex;
+  top: 40px;
+  left: 0%;
+}
+#timeline_container_wrapper #timeline_container .timeline-dot#dot_1 {
+  top: 50%;
+  left: 10%;
+  transform: translateX(-10%, -10%);
+}
+#timeline_container_wrapper #timeline_container .timeline-dot#dot_2 {
+  top: 50%;
+  left: 20%;
+  transform: translateX(-20%, -20%);
+}
+#timeline_container_wrapper #timeline_container .timeline-dot#dot_3 {
+  top: 20%;
+  left: 30%;
+  transform: translateX(-30%, -30%);
+}
+#timeline_container_wrapper #timeline_container .timeline-dot#dot_4 {
+  top: 80%;
+  left: 40%;
+  transform: translateX(-40%, -40%);
+}
+#timeline_container_wrapper #timeline_container .timeline-dot#dot_5 {
+  top: 20%;
+  left: 50%;
+  transform: translateX(-50%, -50%);
+}
+#timeline_container_wrapper #timeline_container .timeline-dot#dot_6 {
+  top: 50%;
+  left: 60%;
+  transform: translateX(-60%, -60%);
+}
+#timeline_container_wrapper #timeline_container .timeline-dot#dot_7 {
+  top: 50%;
+  left: 70%;
+  transform: translateX(-70%, -70%);
+}
+#timeline_container_wrapper #timeline_container .timeline-dot#dot_8 {
+  top: 50%;
+  left: 80%;
+  transform: translateX(-80%, -80%);
+}
+#timeline_container_wrapper #timeline_container .timeline-dot#dot_9 {
+  top: 50%;
+  left: 90%;
+  transform: translateX(-90%, -90%);
+}
+#timeline_container_wrapper #timeline_container .timeline-line {
+  width: 100%;
+  height: 2px;
+  background-color: #EC651E;
+  position: absolute;
+  z-index: 0;
+}
+#timeline_container_wrapper #timeline_container .timeline-line#central_line {
+  width: 80%;
+  height: 4px;
+  background-color: #EC651E;
+  position: absolute;
+  top: 53%;
+  left: 10%;
+  z-index: 0;
 }
 
 /*# sourceMappingURL=style.css.map */
