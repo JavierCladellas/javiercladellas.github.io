@@ -1776,12 +1776,13 @@ modal .modal-close:hover {
 #timeline_container {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   width: 100%;
   margin-top: 80px;
   margin-bottom: 40px;
 }
 #timeline_container .timeline-col {
-  width: 5.8823529412%;
+  width: 5.5555555556%;
 }
 #timeline_container .timeline-col .timeline-row {
   height: 80px;
@@ -1825,6 +1826,12 @@ modal .modal-close:hover {
   color: #505050;
   font-weight: bold;
   width: 50%;
+}
+
+@media screen and (max-width: 800px) {
+  .date-tick.odd {
+    display: none;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -1903,11 +1903,12 @@ modal{
 #timeline_container{
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     width: 100%;
     margin-top:80px;
     margin-bottom:40px;
     .timeline-col{
-        width: calc(100%/17);
+        width: calc(100%/18);
         .timeline-row{
             height: 80px;
             width: 100%;
@@ -1952,6 +1953,15 @@ modal{
                     width: 50%;
                 }
             }
+        }
+    }
+}
+
+
+@media screen and (max-width:800px){
+    .date-tick{
+        &.odd{
+            display: none;
         }
     }
 }
