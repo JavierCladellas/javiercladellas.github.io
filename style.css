@@ -1791,6 +1791,9 @@ modal .modal-close:hover {
 #timeline_container .timeline-col .timeline-row .timeline-element:hover {
   cursor: pointer;
 }
+#timeline_container .timeline-col .timeline-row .timeline-element:hover .timeline-card {
+  display: flex;
+}
 #timeline_container .timeline-col .timeline-row .timeline-element .timeline-figure {
   display: flex;
   flex-direction: row;
@@ -1808,6 +1811,51 @@ modal .modal-close:hover {
   background-color: #EC651E;
   width: 100%;
   height: 8px;
+}
+#timeline_container .timeline-col .timeline-row .timeline-element .timeline-figure .timeline-line.dashed {
+  border: dashed 5px #EC651E;
+  background-color: transparent;
+}
+#timeline_container .timeline-col .timeline-row .timeline-element .timeline-card {
+  display: none;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  position: absolute;
+  width: 300px;
+  background-color: rgb(230, 230, 230);
+  border-radius: 5px;
+  box-shadow: 0px 0px 40px 15px rgba(0, 0, 0, 0.15);
+  padding: 10px;
+  z-index: 2;
+  padding: 16px;
+  margin-top: 8px;
+  margin-left: 8px;
+}
+#timeline_container .timeline-col .timeline-row .timeline-element .timeline-card.right {
+  margin-left: calc(5.5555555556% - 300px);
+}
+#timeline_container .timeline-col .timeline-row .timeline-element .timeline-card div {
+  text-align: center;
+  color: #505050;
+}
+#timeline_container .timeline-col .timeline-row .timeline-element .timeline-card div::selection {
+  background-color: #EC651E;
+}
+#timeline_container .timeline-col .timeline-row .timeline-element .timeline-card div.timeline-card-title {
+  text-decoration: underline;
+  font-size: 22px;
+}
+#timeline_container .timeline-col .timeline-row .timeline-element .timeline-card div.timeline-card-subtitle {
+  color: #EC651E;
+  font-size: 18px;
+  font-weight: bold;
+}
+#timeline_container .timeline-col .timeline-row .timeline-element .timeline-card div.timeline-card-subtitle::selection {
+  background-color: black;
+}
+#timeline_container .timeline-col .timeline-row .timeline-element .timeline-card div.timeline-card-date {
+  font-size: 18px;
 }
 #timeline_container .timeline-col .timeline-row .timeline-ticks {
   display: flex;
@@ -1831,6 +1879,30 @@ modal .modal-close:hover {
 @media screen and (max-width: 800px) {
   .date-tick.odd {
     display: none;
+  }
+}
+@media screen and (max-width: 450px) {
+  #timeline_container {
+    margin-top: 0;
+  }
+  .timeline-card {
+    width: 250px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .timeline-card.right {
+    margin-left: 0 !important;
+  }
+  .timeline-line {
+    height: 4px !important;
+  }
+  .timeline-line.dashed {
+    height: 4px !important;
+    border: dashed 2px #EC651E !important;
+  }
+  .timeline-dot {
+    width: 15px !important;
+    height: 15px !important;
   }
 }
 
