@@ -2039,3 +2039,75 @@ modal{
         height: 15px !important;
     }
 }
+.portfolio-info{
+    display: flex;
+    flex-direction: row;
+    >div{
+        display: flex;
+        justify-content: center;
+    }
+    .portfolio-info-text{
+        >div{
+            display: flex;
+            justify-content: space-between;
+            width:80%;
+            >p{
+                text-align: left;
+            }
+        }
+    }
+    .info-photo-caroussel-container{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        height: calc(100vh - 217px);
+        width: 50%;
+        .info-arrow{
+            cursor: pointer;
+            fill:$white;
+            stroke: $white;
+            height:50px;
+            width:auto;
+            &.left{
+                transform: rotate(90deg);
+            }
+            &.right{
+                transform: rotate(-90deg);
+            }
+        }
+        .info-image{
+            cursor: pointer;
+            border-radius: 5px;
+            box-shadow: 0px 0px 40px 15px rgba(0, 0, 0, 0.15);
+            max-width: 90%;
+        }
+    }
+}
+
+@media screen and (max-width:900px){
+    .portfolio-info{
+        flex-direction: column;
+        .info-photo-caroussel-container{
+            width: 100% !important;
+            height: auto;
+            margin-bottom: 20px;
+            .info-image{
+                max-width: 100%;
+                max-height: calc(90vh - 217px);
+            }
+        }
+        .portfolio-info-text{
+            width: 100% !important;
+            >div{
+                flex-direction: row;
+                width: 100% !important;
+                >p{
+                    text-align: right;
+                }
+            }
+            .info-technologies{
+                flex-direction: column !important;
+            }
+        }
+    }
+}
