@@ -222,6 +222,7 @@ html, body {
                 padding: 0;
                 padding-right: 3rem;
                 select{
+                    appearance: none;
                     -webkit-appearance: none;
                     -moz-appearance: none;
                     text-indent: 1px;
@@ -1891,6 +1892,7 @@ modal{
 }
 
 #download_cv{
+    margin-bottom: 80px;
     &:hover {
         a{
         color:$white !important;
@@ -1898,6 +1900,145 @@ modal{
 }
 
 
+#timeline_container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    margin-top:80px;
+    margin-bottom:40px;
+    .timeline-col{
+        width: calc(100%/18);
+        .timeline-row{
+            height: 80px;
+            width: 100%;
+            .timeline-element{
+                &:hover{
+                    cursor: pointer;
+                    .timeline-card{
+                        display: flex;
+                    }
+                }
+                .timeline-figure{
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    .timeline-dot{
+                        position: absolute;
+                        background-color: $orange;
+                        border: solid 2px $orange;
+                        border-radius: 100%;
+                        width: 20px;
+                        height: 20px;
+                    }
+                    .timeline-line{
+                        background-color: $orange;
+                        width: 100%;
+                        height: 8px;
+                        &.dashed{
+                            border: dashed 5px $orange;
+                            background-color: transparent;
+                        }
+                    }
+                }
+                .timeline-card{
+                    display:none;
+                    flex-direction: column;
+                    justify-content: space-around;
+                    align-items: center;
+                    position: absolute;
+                    width: 300px;
+                    background-color: $white;
+                    border-radius: 5px;
+                    box-shadow: 0px 0px 40px 15px rgba(0, 0, 0, 0.15);
+                    padding: 10px;
+                    z-index:2;
+                    padding:16px;
+                    margin-top:8px;
+                    margin-left:8px;
+                    &.right{
+                        margin-left: calc(100%/18 - 300px);
+                    }
+                    div{
+                        text-align: center;
+                        color: $light-black;
+                        &::selection {
+                            background-color: $orange;
+                        }
+                        &.timeline-card-title{
+                            text-decoration: underline;
+                            font-size: 22px;
+                        }
+                        &.timeline-card-subtitle{
+                            color:$orange;
+                            font-size: 18px;
+                            font-weight: bold;
+                            &::selection {
+                                background-color: $black;
+                            }
+                        }
+                        &.timeline-card-date{
+                            font-size: 18px;
+                        }
+                    }
+                }
+            }
+            .timeline-ticks{
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                margin-top:40px;
+                align-items: flex-end;
+                .date-tick{
+                    transform: rotate(-75deg);
+                    -webkit-transform: rotate(-75deg);
+                    -moz-transform: rotate(-75deg);
+                    -ms-transform: rotate(-75deg);
+                    -o-transform: rotate(-75deg);
+                    font-size: 18px;
+                    color: $light-black;
+                    font-weight: bold;
+                    width: 50%;
+                }
+            }
+        }
+    }
+}
+
+
+@media screen and (max-width:800px){
+    .date-tick{
+        &.odd{
+            display: none;
+        }
+    }
+}
+
+@media screen and (max-width:450px){
+    #timeline_container{
+        margin-top:0;
+    }
+    .timeline-card{
+        width: 250px;
+        //center on screen
+        left: 50%;
+        transform: translate(-50%, -50%);
+        &.right{
+            margin-left: 0 !important;
+        }
+    }
+    .timeline-line{
+        height: 4px !important;
+        &.dashed{
+            height: 4px !important;
+            border: dashed 2px $orange !important;
+        }
+    }
+    .timeline-dot{
+        width: 15px !important;
+        height: 15px !important;
+    }
+}
 .portfolio-info{
     display: flex;
     flex-direction: row;
