@@ -31,8 +31,8 @@
             <div id="mainListDiv" class="main_list">
                 <ul class="navlinks">
                     <li><a class="nav-btn active" href="index.html">Home</a></li>
-                    <li><a class="nav-btn" href="about.html">About</a></li>
-                    <li><a class="nav-btn" href="services.html">Services</a></li>
+                    <!-- <li><a class="nav-btn" href="about.html">About</a></li> -->
+                    <!-- <li><a class="nav-btn" href="services.html">Services</a></li> -->
                     <li><a class="nav-btn" href="career.html">Career</a></li>
                     <li><a class="nav-btn" href="work.html">Portfolio</a></li>
                     <!-- <li><a class="nav-btn" href="contact.html">Contact</a></li> -->
@@ -65,10 +65,10 @@
         <div class="container-fluid d-flex flex-column">
             <div class="titles-container">
                 <p class="home-title">Javier <span style="color:#EC651E" >Cladellas</span></p> 
-                <p class="home-subtitle"><span>Mathematician, data scientist and&nbsp;developer.</span></p>
+                <p class="home-subtitle"><span>Software&nbsp;developer</span></p>
             </div>
             <div class="project-text-container">
-                <p class="project-text">A project in mind? </p>
+                <!-- <p class="project-text">A project in mind? </p>-->
             </div>
             <div class="main-button-container">
                 <button  form="go-to-contact" class="button main-button" >
@@ -92,16 +92,24 @@
             <div>
                 <h1 class="page-title">
                     <i class="fa fa-minus" aria-hidden="true"></i> 
-                    WHAT I DO
+                    ABOUT
                     <i class="fa fa-minus" aria-hidden="true"></i>
                 </h1>
             </div>
 
             <div class="text-container my-auto">
-                <div class="text">My mission is to help my clients grow, innovate and endure their business digitally, through the adoption of leading-edge web design technology, compelling marketing strategies, and a customer-driven business&nbsp;philosophy.</div>
+                <div class="text">
+                    I am an R&D Software Engineer based in Strasbourg, France, originally from El Salvador. With a strong foundation in applied mathematics, I specialize in High-Performance Computing, algorithm optimization and computational geometry. 
+                    <br/>
+                    Currently, I work as Research Engineer at Cemosis, where I developed <a href="https://github.com/feelpp/benchmarking" target="_blank">feelpp.benchmarking</a>, an open-source benchmarking framework for benchmarking and monitoring HPC apps and large scale simulations across top 500 supercomputers.
+                    I also contributed to building a C++ computational geometry library for mesh and geometric processing.
+                    <br/>
+                    Alongside my main work, I have worked on several web design and development projects as a hobby, building interactive and visually engaging applications.
+            
+                </div>
             </div>
 
-            <div class="container-fluid services my-auto">
+            <!-- <div class="container-fluid services my-auto">
                 <div class="row">
                     <div class="col-lg-1 col-0"></div>
                     <div onclick="document.getElementById('go-to-services').submit();" class="col-lg-2 col-md-4 col-sm-6 col-12 service-container">
@@ -131,14 +139,14 @@
                     </div>
                     <div class="col-lg-1 col-0"></div>
                 </div>
-            </div>
+            </div> -->
             
             <div class="page-button-container my-auto">
-                <button form="go-to-services" class="button page-button" >
-                    Learn More
+                <button form="go-to-career" class="button page-button" >
+                    Experience
                 </button>
             </div>
-            <form id="go-to-services" action="services.html"></form>
+            <form id="go-to-career" action="career.html"></form>
 
             <div class="next-page-button-container mt-auto bounce">
                 <button class="next-page-button b2" onClick="document.getElementById('fourth-section').scrollIntoView({ behavior: 'smooth', block: 'nearest'});">
@@ -231,12 +239,16 @@
                     <i class="fa fa-minus" aria-hidden="true"></i> 
                 </h1>
             </div>
-            <div class="text-container my-auto">
-                <div class="text">I have mastered many high-level languages and software to develop your ideas thoroughly, using the right features of each one of them to accelerate the developing process without losing&nbsp;any&nbsp;quality.</div>    
-            </div>
 
             <div class="container-fluid prog-icons my-auto">
                 <div class="row">
+                    <div class="prog-icon col-lg-2 col-md-3 col-sm-4 col-6">
+                        <img src="assets/technologies/c++.png"></img>
+                    </div>
+                    <div class="prog-icon col-lg-2 col-md-3 col-sm-4 col-6">
+                        <img src="assets/technologies/python.png"></img>
+                    </div>
+                    <!--
                     <div class="prog-icon col-lg-2 col-md-3 col-sm-4 col-6">
                         <img id="bootstrap" src="assets/technologies/bootstrap.png"></img>
                     </div>
@@ -246,15 +258,13 @@
                     <div class="prog-icon col-lg-2 col-md-3 col-sm-4 col-6">
                         <img src="assets/technologies/matlab.png"></img>
                     </div>
-                    <div class="prog-icon col-lg-2 col-md-3 col-sm-4 col-6">
-                        <img src="assets/technologies/c++.png"></img>
-                    </div>
                     <div style="padding-left:0px" class="prog-icon col-lg-2 col-md-3 col-sm-4 col-6">
                         <img  id="php" src="assets/technologies/php.png"></img>
                     </div>
                     <div class="prog-icon col-lg-2 col-md-3 col-sm-4 col-6">
                         <img src="assets/technologies/csharp.png"></img>
                     </div>
+                    -->
                     <div class="prog-icon col-lg-2 col-md-3 col-sm-4 col-6">
                         <img src="assets/technologies/css3.png"></img>
                     </div>
@@ -262,35 +272,43 @@
                         <img src="assets/technologies/html5.png"></img>
                     </div>
                     <div style="padding-left:0px" class="prog-icon col-lg-2 col-md-3 col-sm-4 col-6">
-                        <img src="assets/technologies/ionic.png"></img>
-                    </div>
+                        <img src="assets/technologies/react.png"></img>
+                    </div>            
+                    <div class="prog-icon col-lg-2 col-md-3 col-sm-4 col-6">
+                        <img src="assets/technologies/javascript.png"></img>
+                    </div>  
                     <div class="prog-icon col-lg-2 col-md-3 col-sm-4 col-6">
                         <img id="plotly" src="assets/technologies/plotly.png"></img>
                     </div>
+                    <div style="padding-left:0px" class="prog-icon col-lg-2 col-md-3 col-sm-4 col-6">
+                        <img src="assets/technologies/mysql.png"></img>
+                    </div> 
+                    <div style="padding-left:0px" class="prog-icon col-lg-2 col-md-3 col-sm-4 col-6">
+                        <img src="assets/technologies/docker.png"></img>
+                    </div>                     
+                    <div style="padding-left:0px" class="prog-icon col-lg-2 col-md-3 col-sm-4 col-6">
+                        <img src="assets/technologies/github.png"></img>
+                    </div>                     
+                    <div style="padding-left:0px" class="prog-icon col-lg-2 col-md-3 col-sm-4 col-6">
+                        <img src="assets/technologies/linux.png"></img>
+                    </div>       
+                    <div class="prog-icon col-lg-2 col-md-6 col-sm-4 col-6">
+                        <img src="assets/technologies/unity.png"></img>
+                    </div>
+                    <!--
                     <div style="padding-left:0px" class="prog-icon col-lg-2 col-md-3 col-sm-4 col-6">
                         <img src="assets/technologies/jquery.png"></img>
                     </div> 
                     <div class="prog-icon col-lg-2 col-md-3 col-sm-4 col-6">
                         <img id="spark" src="assets/technologies/spark.png"></img>
                     </div>    
-                    <div style="padding-left:0px" class="prog-icon col-lg-2 col-md-3 col-sm-4 col-6">
-                        <img src="assets/technologies/mysql.png"></img>
-                    </div>           
-                    <div class="prog-icon col-lg-2 col-md-3 col-sm-4 col-6">
-                        <img src="assets/technologies/javascript.png"></img>
-                    </div>
-                    <div class="prog-icon col-lg-2 col-md-3 col-sm-4 col-6">
-                        <img src="assets/technologies/python.png"></img>
-                    </div>
                     <div class="prog-icon col-lg-2 col-md-3 col-sm-4 col-6">
                         <img src="assets/technologies/blender.png"></img>
                     </div>
                     <div class="prog-icon col-lg-2 col-md-6 col-sm-4 col-6">
                         <img src="assets/technologies/BI.png"></img>
                     </div>
-                    <div class="prog-icon col-lg-2 col-md-6 col-sm-4 col-6">
-                        <img src="assets/technologies/unity.png"></img>
-                    </div>
+                    -->
                 </div>
             </div>
             <div class="next-page-button-container mt-auto bounce">
